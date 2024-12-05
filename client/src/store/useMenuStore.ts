@@ -4,7 +4,8 @@ import { createJSONStorage, persist } from "zustand/middleware";
 import { useRestaurantStore } from "./useRestaurantStore";
 import { toast } from "sonner";
 
-const API_END_POINT = "http://localhost:5000/api/v1/menu";
+const API_END_POINT =
+  "https://hungereatsrestaurantapp.onrender.com/api/v1/menu";
 axios.defaults.withCredentials = true;
 
 type MenuState = {
